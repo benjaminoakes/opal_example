@@ -3,7 +3,9 @@ require 'opal'
 require 'opal-jquery'
 
 require 'opal/rspec/rake_task'
-Opal::RSpec::RakeTask.new(:default)
+Opal::RSpec::RakeTask.new(:default) do |server, task|
+  server.append_path 'app'
+end
 
 desc 'Build our app to public/main.js'
 task :build do
