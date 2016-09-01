@@ -4,6 +4,8 @@ gem 'json'
 
 gem 'guard'
 gem 'guard-rake'
+gem 'rspec'
+gem 'rspec-core'
 
 gem 'opal'
 gem 'opal-jquery'
