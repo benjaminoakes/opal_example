@@ -36,6 +36,8 @@ GEM
       tilt (>= 1.4)
     opal-jquery (0.4.2)
       opal (>= 0.7.0, < 0.11.0)
+    opal-rspec (0.6.0)
+      opal (>= 0.10.0, < 0.11)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -64,6 +66,7 @@ DEPENDENCIES
   json
   opal
   opal-jquery
+  opal-rspec
 
 BUNDLED WITH
    1.12.5

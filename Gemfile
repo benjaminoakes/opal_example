@@ -7,3 +7,4 @@ gem 'guard-rake'
 
 gem 'opal'
 gem 'opal-jquery'
+gem 'opal-rspec'
