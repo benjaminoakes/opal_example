@@ -18,6 +18,7 @@ GEM
     guard-rake (1.0.0)
       guard
       rake
+    hashie (3.4.4)
     hike (1.2.3)
     json (2.0.2)
     listen (3.1.5)
@@ -77,6 +78,7 @@ PLATFORMS
 DEPENDENCIES
   guard
   guard-rake
+  hashie
   json
   opal
   opal-jquery

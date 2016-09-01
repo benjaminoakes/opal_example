@@ -10,3 +10,5 @@ gem 'rspec-core'
 gem 'opal'
 gem 'opal-jquery'
 gem 'opal-rspec'
+
+gem 'hashie'
