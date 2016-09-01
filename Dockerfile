@@ -1,18 +1,16 @@
-FROM alpine:3.4
+FROM ubuntu:16.04
 
-RUN echo 'apk update && apk add "$1"' > /usr/local/bin/pkg-apk
+RUN echo 'apt-get update && apt-get install --no-install-recommends -y "$1"' > /usr/local/bin/pkg-deb
 RUN echo 'gem install --no-ri --no-rdoc "$1"' > /usr/local/bin/pkg-gem
 RUN chmod +x /usr/local/bin/pkg-*
 
-RUN pkg-apk ca-certificates
+RUN pkg-deb ca-certificates
 RUN update-ca-certificates
 
-RUN pkg-apk ruby=2.3.1-r0
-RUN pkg-apk ruby-io-console=2.3.1-r0
-RUN pkg-apk ruby-dev=2.3.1-r0
-RUN pkg-apk ruby-bundler=1.12.5-r0
-RUN pkg-apk libffi-dev=3.2.1-r2
-RUN pkg-apk build-base=0.4-r1
+RUN pkg-deb ruby2.3
+RUN pkg-deb ruby2.3-dev
+RUN pkg-deb libffi-dev=3.2.1-4
+RUN pkg-deb build-essential=12.1ubuntu2
 
 RUN pkg-gem bundler:1.12.5
 RUN pkg-gem ffi:1.9.14
