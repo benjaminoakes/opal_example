@@ -12,3 +12,5 @@ gem 'opal-jquery'
 gem 'opal-rspec'
 
 gem 'hashie'
+gem 'uglifier'
+gem 'therubyracer'
