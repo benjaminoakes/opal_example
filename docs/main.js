@@ -36262,7 +36262,7 @@ Opal.modules["user"] = function(Opal) {
     return (($e = ["Clicked!"]), $f = $scope.get('Element')['$[]']("#rb-outlet"), $f['$html='].apply($f, $e), $e[$e.length-1])}, TMP_2.$$s = self, TMP_2.$$arity = 0, TMP_2), $c).call($d, "click");
     ($c = ($e = $scope.get('HTTP')).$get, $c.$$p = (TMP_3 = function(response){var self = TMP_3.$$s || this;
 if (response == null) response = nil;
-    return self.$puts("response.body: " + (response.$body().$inspect()))}, TMP_3.$$s = self, TMP_3.$$arity = 1, TMP_3), $c).call($e, "main.js");
+    return self.$puts("response.body: " + (response.$body().$inspect()))}, TMP_3.$$s = self, TMP_3.$$arity = 1, TMP_3), $c).call($e, "index.html");
     self.$puts("{ :foo => 'bar' }.to_json: " + ($hash2(["foo"], {"foo": "bar"}).$to_json().$inspect()));
     user = $scope.get('User').$new("Bill");
     self.$puts(user);

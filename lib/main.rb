@@ -12,7 +12,7 @@ Document.ready? do
     Element['#rb-outlet'].html = "Clicked!"
   end
 
-  HTTP.get('main.js') do |response|
+  HTTP.get('index.html') do |response|
     puts "response.body: #{response.body.inspect}"
   end
 
